@@ -204,22 +204,26 @@ class _SurahBuilderState extends State<SurahBuilder> {
           ),
           centerTitle: true,
           toolbarHeight: 130,
-          title: Text(
-            // widget.
-            widget.suraName,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontFamily: 'quran',
-                shadows: [
-                  Shadow(
-                    offset: Offset(1, 1),
-                    blurRadius: 2.0,
-                    color: Color.fromARGB(255, 0, 0, 0),
-                  ),
-                ]),
+          title: Column(
+            children: [
+              Text(
+                // widget.
+                widget.suraName,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontFamily: 'quran',
+                    shadows: [
+                      Shadow(
+                        offset: Offset(1, 1),
+                        blurRadius: 2.0,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                      ),
+                    ]),
+              ),
+            ],
           ),
           backgroundColor: Colors.amber,
           shape: RoundedRectangleBorder(

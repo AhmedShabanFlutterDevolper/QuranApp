@@ -114,6 +114,7 @@ class _QuranText_ScreanState extends State<QuranText_Screan> {
                       child: Row(
                         children: [
                           ArabicSuraNumber(i: i),
+                          const Expanded(child: SizedBox()),
                           const SizedBox(
                             width: 5,
                           ),
@@ -124,7 +125,6 @@ class _QuranText_ScreanState extends State<QuranText_Screan> {
                               children: [],
                             ),
                           ),
-                          const Expanded(child: SizedBox()),
                           Text(
                             arabicName[i]['name'],
                             style: const TextStyle(
