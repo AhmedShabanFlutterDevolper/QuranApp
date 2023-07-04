@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:quran/moudels/home/AllScreansApp/Home.dart';
+import 'package:quran/moudels/home/AllScreansApp/OnBeardingScrean.dart';
 
 class SplaschScrean extends StatefulWidget {
   const SplaschScrean({super.key});
@@ -18,7 +18,7 @@ class _SplaschScreanState extends State<SplaschScrean> {
           seconds: 3,
         ), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => HomeScrean()));
+          MaterialPageRoute(builder: (context) => onBeardingScrean()));
     });
     super.initState();
   }

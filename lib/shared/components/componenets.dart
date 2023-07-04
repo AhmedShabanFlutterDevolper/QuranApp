@@ -17,38 +17,13 @@ int onTap = 0;
 int onTap9 = 0;
 int onTap10 = 0;
 
-// List<Widget> Screans = [SleepScrean(), Morning_Screan(), EveningScrean()];
-
-// List<BottomNavigationBarItem> Azkar = [
-//   BottomNavigationBarItem(
-//       icon: Icon(
-//         Icons.remove_red_eye_sharp,
-//       ),
-//       label: 'اذكار النوم'),
-//   BottomNavigationBarItem(
-//       icon: Icon(
-//         Icons.sunny,
-//       ),
-//       label: ' اذكار الصباح'),
-//   BottomNavigationBarItem(
-//       icon: Icon(
-//         Icons.mode_night,
-//       ),
-//       label: ' اذكار المساء'),
-// ];
-
-// List<BottomNavigationBarItem> bottomItems = [
-//   BottomNavigationBarItem(
-//       icon: Icon(
-//         Icons.text_fields_sharp,
-//       ),
-//       label: 'Quran Text'),
-//   BottomNavigationBarItem(
-//       icon: Icon(
-//         Icons.surround_sound_rounded,
-//       ),
-//       label: 'Quran Sound'),
-// ];
+void NavigatorAndFinshed(context, Widget) {
+  Navigator.pushAndRemoveUntil(
+    context,
+    MaterialPageRoute(builder: (context) => Widget),
+    (Route<dynamic> route) => false,
+  );
+}
 
 void NavigatorTo(context, Widget) {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Widget));
